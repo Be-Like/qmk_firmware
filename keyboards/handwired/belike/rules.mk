@@ -1,0 +1,19 @@
+# Build Options
+#   change yes to no to disable
+
+PLATFORM = rp2040
+
+AUDIO_SUPPORTED = no
+RGB_MATRIX_SUPPORTED = no
+RGBLIGHT_SUPPORTED = no
+
+EXTRAKEY_ENABLE = yes
+SPLIT_MATRIX = yes
+SPLIT_KEYBOARD = yes
+SERIAL_DRIVER = usart
+SPLIT_TRANSPORT = serial
+
+
+# Trackball
+# POINTING_DEVICE_ENABLE = yes
+# POINTING_DEVICE_DRIVER = pmw3389
