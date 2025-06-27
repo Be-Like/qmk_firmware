@@ -4,23 +4,22 @@
 
 #pragma once
 
-#define MASTER_LEFT
 
 /* Keyboard matrix assignment */
-#define MATRIX_ROW_PINS_LEFT { GP27, GP26, GP18, GP20, GP19, GP10 }
-#define MATRIX_COL_PINS_LEFT { GP4, GP5, GP6, GP7, GP8, GP9 }
-
-#define MATRIX_ROW_PINS_RIGHT { GP4, GP5, GP7, GP6, GP8, GP9 }
-#define MATRIX_COL_PINS_RIGHT { GP3, GP2, GP26, GP27, GP28, GP29 }
-
-
 #define SERIAL_USART_FULL_DUPLEX
 #define SERIAL_USART_TX_PIN GP0
 #define SERIAL_USART_RX_PIN GP1
-#define DEBUG_SERIAL
 
 
 /* Reset */
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
-#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED GP17
 
+
+
+// Copyright 2023 Gustaw.xyz (@Gustaw.xyz)
+// SPDX-License-Identifier: GPL-2.0-or-later
+
+#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 200U
+#define SERIAL_USART_DRIVER SD1
+
+#define CONSOLE_ENABLE
